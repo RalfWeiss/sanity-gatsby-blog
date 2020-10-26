@@ -55,6 +55,7 @@ export const query = graphql`
             alt
           }
           title
+          rating
           _rawExcerpt
           slug {
             current

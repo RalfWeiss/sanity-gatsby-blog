@@ -33,7 +33,15 @@ function BlogPostPreview (props) {
             <PortableText blocks={props._rawExcerpt} />
           </div>
         )}
-        <div className={styles.date}>{format(props.publishedAt, 'MMMM Do, YYYY')}</div>
+        <div className={styles.textFooter}>
+          <div className={styles.date}>{format(props.publishedAt, 'MMMM Do, YYYY')}</div>
+          {
+            props.rating > 0
+            ? <div className={styles.rating}>score:&nbsp;{props.rating}</div>
+            : null
+          }
+          
+        </div>
       </div>
     </Link>
   )
