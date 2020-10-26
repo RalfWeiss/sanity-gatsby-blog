@@ -1,6 +1,7 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
+
 .root {
   position: relative;
   z-index: 100;
@@ -33,6 +34,11 @@
         color: var(--color-accent);
       }
     }
+  }
+
+  @nest & a & p {
+    padding-left: 1.1em;
+    font-weight: normal;
   }
 }
 

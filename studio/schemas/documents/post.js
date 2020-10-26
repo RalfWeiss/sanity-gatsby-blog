@@ -1,4 +1,5 @@
 import {format} from 'date-fns'
+//import Slider from '../../components/slider'
 
 export default {
   name: 'post',
@@ -11,6 +12,14 @@ export default {
       title: 'Title',
       description: 'Titles should be catchy, descriptive, and not too long'
     },
+    {
+      name: 'rating',
+      title: 'Rating',
+      type: 'number',
+      options: {
+        range: {min: 0, max: 10, step: 0.2}
+      }
+    },    
     {
       name: 'slug',
       type: 'slug',
